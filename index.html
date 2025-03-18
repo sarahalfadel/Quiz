@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اختبار تفاعلي - النماذج ثلاثية الأبعاد</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>اختبار تفاعلي لفهم بنية الذرة والعناصر الكيميائية</h1>
+    </header>
+
+    <!-- 3D Model Section -->
+    <div id="3d-model-container">
+        <!-- سيتم عرض النموذج ثلاثي الأبعاد هنا -->
+    </div>
+
+    <!-- Quiz Section -->
+    <div id="quiz-section">
+        <h2>اختبر معرفتك!</h2>
+        
+        <!-- خانة إدخال اسم الطالب -->
+        <div id="name-section">
+            <label for="student-name">الرجاء إدخال اسم الطالب:</label>
+            <input type="text" id="student-name" placeholder="اسم الطالب" required>
+        </div>
+        
+        <div id="question-container">
+            <!-- الأسئلة ستظهر هنا بشكل ديناميكي -->
+        </div>
+        <button onclick="showResult()">عرض النتيجة</button>
+    </div>
+
+    <!-- Result Section -->
+    <div id="result-section">
+        <h2>نتيجتك</h2>
+        <p id="student-result"></p>
+        <p id="score"></p>
+    </div>
+
+    <footer>
+        <p>تم تصميم هذا الموقع بواسطة المعلمة سارة الفضل</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
